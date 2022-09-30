@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="row">
+    <h3 class="col-12 display-3 mb-5 text-center">Enter your color values</h3>
+    <div class="d-flex justify-content-center ">
+      <label class="mx-3 text-danger " for="red">Red</label>
+      <input class="input col-sm-2" type="number" name="red" id="red" />
+      <label class="mx-3 text-success" for="green">Green</label>
+      <input class="input col-sm-2" type="number" name="green" id="green" />
+      <label class="mx-3 text-primary" for="blue">Blue</label>
+      <input class="input col-sm-2 mx-1" type="number" name="blue" id="blue" />
+      <button id="btn-submit" class="btn btn-danger col-sm-2">submit</button>
+    </div></div>
+    <div id="all-colors" class="d-flex justify-content-evenly">
+      <div class="ballDiv" id="outcome-div">
+      </div>
+      <div
+        class="ballDiv"
+        id="outcome-div2"
+      ></div>
+    </div>
+    <div class="d-flex justify-content-evenly">
+        <h2 id="rgb" class="display-6 rgbHead mt-2"></h2>
+        <h2 id="rgb2" class="display-6 rgbHead mt-2"></h2>
+    </div>
+  
+  </body>
+</html>
